@@ -1,0 +1,431 @@
+input[type=text],input[type=search],
+        input[type=number],
+        input[type=email],input[type="password"],input[type="file"],
+
+       input[type=date],select,textarea
+
+        {
+            width: 50%;
+            padding: 12px 20px !important;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            height: 7.5%;
+            box-sizing: border-box;
+
+            border: 2px solid #ccc;
+            border-radius: 50px;
+            font-size: 16px;
+        
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            padding: 12px 20px 12px 40px;
+            transition: width 0.4s ease-in-out;
+            font-style: italic;
+            background-color: #666;
+       
+          font-family:Segoe Script;
+          font-style: italic;
+          
+
+
+
+
+
+        }
+
+
+        input[type=text]:focus, input[type=password]:focus,
+        input[type=number]:focus,input[type="file"]:focus,
+        input[type=email]:focus,input[type=date]:focus,select:focus,textarea:focus {
+            width: 100%;
+        }
+
+
+
+    
+    button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 20%;
+        border-radius: 50px;
+        border: 2px solid ;
+        height: 10%;
+               
+          font-family:Segoe Script;
+          font-style: italic;
+          font-size: 30px;
+
+           }
+         font{  font-family:Segoe Script;
+          font-style: italic;
+          font-size: 30px;
+
+
+         }
+    
+    .bg {
+        width: 100%; height: 50px;
+        padding: 15px;
+        background-color:#408ba1;
+         font-size: 50px; 
+             
+          font-family:Segoe Script;
+          font-style: italic;text-transform :uppercase;
+          
+    }
+    
+     input::placeholder,textarea::placeholder {
+          color:#00ff00;
+         font-size: 1.2em;
+         font-style: italic;
+          }
+
+        d
+        {
+            width: 100%;
+             height: 50px;
+            padding: 15px;
+            background:#0ab4e4;
+        }
+
+        
+       sup
+       {
+         color: red;
+         size: 1px;
+       }
+       
+          option
+          {
+              color:rgb(1, 240, 57);
+              size: 200px;
+          }
+          select option[data-default]{
+              color: #888;
+          }
+          label
+          { color: #000;
+          font-weight: bold;
+          text-align:right;
+          font-size: 30px;
+            font-family:Segoe Script;
+          font-style: italic;text-transform :uppercase;
+          
+                    }
+
+
+
+          .dropbtn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+
+    }
+
+    .dropdown {position: center;
+        width: 20%;
+    height: auto;
+
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 100; 
+        font-family:Segoe Script;
+          font-style: italic;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #f1f1f1
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+       position: center;
+    }
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.back{position: fixed;
+z-index: -100;
+width: auto;
+height: 100%;
+overflow: hidden;
+
+
+}
+
+
+
+ .poftd{
+    border-collapse: collapse;
+    width: 70%;
+}
+
+
+
+.photo
+{
+    background-color: #fff;
+    border: 3px solid #fff;
+    -webkit-box-shadow: #666 0px 0px 3px;
+    -moz-box-shadow: #666 0px 0px 3px;
+    box-shadow: #666 0px 0px 3px;
+    behavior: url('PIE.htc');
+    position: relative;
+    
+    width: 150px;
+    height: auto;
+    margin: 10px;
+            border-color: #ff0000 #00ff00 #00e1ff rgb(255, 136, 0);
+}
+
+
+
+.grid {
+  display: inline;
+  float:right;
+  margin-left: 5px;
+  margin-right: 5px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+.modal-title {
+        font-size: 18px;
+    margin: 0;
+    line-height: 1.42857143;
+    width: 90%; height: 50px;
+        padding: 15px;
+        background-color:#408ba1;
+         font-size: 50px; 
+             
+          font-family:Segoe Script;
+          font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+h1{
+  font-size: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 15px;
+}
+table{
+  width:100%;
+  table-layout: fixed;
+}
+.tbl-header{
+  background-color:rgba(255, 0, 216, 0.3);
+ }
+.tbl-content{
+  height:300px;
+  overflow-x:auto;
+  margin-top: 0px;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+/* demo styles */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+body{
+  background: -webkit-linear-gradient(left);
+  background: linear-gradient(to rigt);
+  font-family: 'Roboto', sans-serif;
+}
+section{
+  margin: 50px;
+}
+
+
+.the {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+color:#cd7432;
+width: auto;
+background-color: #223213;
+  
+            padding: 12px 20px !important;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            height: 1%;
+            box-sizing: border-box;
+
+            border: 2px solid #ccc;
+            border-radius: 50px;
+            font-size: 16px;
+                   
+                     font-family:Segoe Script;
+          font-style: italic;
+}
+
+
+
+
+.tde {
+    padding: 8px;
+    text-align:left;
+    border-bottom: 1px solid #ddd;
+color:#cd7432;
+background-color: #fff;
+font-style:script;
+    display: table-cell;
+    width: 65%;
+            padding: 12px 20px !important;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            height: 1%;
+            box-sizing: border-box;
+
+            border: 2px solid #ccc;
+            border-radius: 50px;
+            font-size: 16px; font-family:Segoe Script;
+          font-style: italic;
+
+                    border-color: #ff0000 #00ff00 #00e1ff rgb(255, 136, 0)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

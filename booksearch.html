@@ -1,0 +1,81 @@
+<html>
+    <title>Book search</title>
+  <link rel="stylesheet" href="style\index.css">
+
+<body>
+<script   language="javascript">
+      var date=new Date();
+      document.write(date);
+
+</script>
+
+        <div id="fullpage" >
+        <div class="section" id="section1" style="height: 800px;position: fixed;z-index: -100;width: 100%;height: 100%;overflow:block;">
+            <div id="particles-js"><canvas class="particles-js-canvas-el" style="width: 100%;position: fixed;z-index: -100; height: 100%;"></canvas></div>
+            
+            <script type="text/javascript" src="Sh/particles.js">
+            </script>
+            <script type="text/javascript" src="Sh/link.js"></script>
+
+        </div>
+    <center>
+        <form>
+       <div class="bg">Search Book</div>
+
+
+       <input type="text" name="bookname" autocomplete="on" placeholder="Enter Book  Name" style=" text-transform :uppercase" required>
+      
+       
+       <input name="publisher" placeholder="Enter Publisher " type="text" required>
+       
+       <input name="author" placeholder="Enter Author " type="text" required>
+       <input name="category" placeholder="Enter Book Category" type="text" required>
+       <input name="edition_year" placeholder="Enter Edition Year " type="text">  
+       <button type="submit">Search</button>
+
+       <table style="width:100%">
+        <tbody><tr class="tbl-header">         
+            <th>Book id</th>
+            <th>Photo</th>
+            <th>Book name</th>
+            <th>Title</th>
+            <th>Author </th>
+             <th>Book Category</th>
+             <th>Edition</th>
+             <th>Publisher </th>
+             <th>Status</th>
+             
+             <th>Action</th>           
+                 
+             </tr>
+ 
+             <tr class="tbl-content">
+                    <td>Book id</td>
+            <td><div  class="grid">
+                    <img  style=" border-color:slategray;box-shadow: 9px 5px 5px initial;   margin: 1px;width: 100px;  hight:100px; " id="imglist" class="photo" src=".jpg">
+                           </div></td>
+                           <td>Book name</td>
+                           <td>Title</td>
+                           <td>Author </td>
+                            <td>Book Category</td>
+                            <td>Edition</td>
+                            <td>Publisher </td>
+                            <td>Status</td>
+             <td><button style="width:50%;    height: 30%;" class="re">Edit </button><button style="width:50%; height:30%; " class="re">Delete</button></td>           
+                 
+        
+             
+                      </tr></tbody></table>
+
+    </center>
+</form>
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,237 @@
+<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif" rel="stylesheet"> 
+
+
+
+
+
+
+
+
+
+
+    font-family: 'IBM Plex Serif', serif;
+
+
+
+
+
+
+
+Mit@1234
+
+if(isset($_POST["submit1"]))
+          {
+           
+              mysqli_query($link,"INSERT INTO  'sineup' values('','$_POST[name]','$_POST[dateofbirth]','$_POST[mname]','$_POST[mname]','$_POST[mname]','$_POST[mname]','$_POST[mname]','$_POST[mname]','$_POST[mname]','$_POST[mname]','$_POST[mname]','$_POST[mname]')");
+         
+          
+          
+            }
+          
+?>
+
+
+
+
+
+
+
+
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "lib";
+
+// Create connection
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+
+// Check connection
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+echo "Connected successfully";
+
+          
+?>
+
+//134217728 bytes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*session_start();
+
+//if (isset($_POST['submit'])) {
+    $username = $_POST['Username'];
+    $password = md5($_POST['Password']);
+    chckusername($username, $password);
+}
+
+function chckusername($username, $password){
+
+    $check = "SELECT * FROM `sineup` WHERE 1";
+    $check_q = mysqli_query($check) or die("<div class='loginmsg'>Error on checking Username<div>");
+echo $check_q;
+    if (mysqli_num_rows($check_q) == 1) {
+        chcklogin($username, $password);
+    }
+    else{
+        echo "<div id='loginmsg'>Wrong Username</div>";
+    }
+}
+
+function chcklogin($username, $password){
+
+    $login = "SELECT * FROM `sineup` WHERE username='$username'  and password='$password'";
+    $login_q = mysqli_query($login) or die('Error on checking Username and Password');
+
+    if (mysql_num_rows($login_q) == 1){
+        echo "<div id='loginmsg'> Logged in as $username </div>"; 
+        $_SESSION['username'] = $username;
+        header('Location: addbook.php');
+    }
+}
+    */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<?php
+  /*
+   session_start();
+   
+   if($_SERVER["REQUEST_METHOD"] == "POST") {
+      // username and password sent from form 
+      
+      $myusername = mysqli_real_escape_string($conn,$_POST['username']);
+      $mypassword = mysqli_real_escape_string($conn,$_POST['password']); 
+      
+      $sql = "SELECT id FROM  WHERE username = '$myusername' and passcode = '$mypassword'";
+      $result = mysqli_query($db,$sql);
+      $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
+      $active = $row['active'];
+      
+      $count = mysqli_num_rows($result);
+      
+      // If result matched $myusername and $mypassword, table row must be 1 row
+		
+      if($count == 1) {
+         session_register("myusername");
+         $_SESSION['login_user'] = $myusername;
+         
+         header("location: welcome.php");
+      }else {
+         $error = "Your Login Name or Password is invalid";
+      }
+   }*/
+?> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td {
+    text-align: justify;
+
+    padding: .1em .3em;
+margin: .1em;
+vertical-align: middle;
+text-shadow: 0 1px 0 #fff;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+   <div class="navbar">
+       <div class="dropdown"  style="float:right;">
+
+            <button class="dropbtn">Book</button>
+            <div class="dropdown-content">
+                <a href="addbook.php">Add Book</a>
+
+                <a href="catageryadd.php">category</a>
+                <a href="issuebook.php">Issue Book</a>
+                <a href="allbook.php">All Book</a>
+
+            </div>
+        </div>
+</div>
+        <div class="dropdown"  style="float:left;">
+
+<button class="dropbtn">Profile</button>
+<div class="dropdown-content">
+    <a href="allmember.php">All Member profile</a>
+
+    <a href="librianprofile.php">librian profile</a>
+    
+
+</div>
+</div>
